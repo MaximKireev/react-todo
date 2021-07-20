@@ -1,29 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
+import AppHeader from './AppHeader'
+import ToDoItemsList from './ToDoItemsList'
+import AddNewItem from "./AddNewItem";
 
 let App = () => {
+    let itemsArray = [
+        {todo: "Dreenk coffe", important: false},
+        {todo: "Create React App", important: true}]
+
     return (
         <div>
-            <Header />
-            <Search />
-            <SearchItems />
+            <AppHeader />
+            <AddNewItem />
+            <ToDoItemsList value = {itemsArray}/>
         </div>
     )
 }
-const Header = () => {
-    return <h1>My ToDo list</h1>
-}
-const Search = () => {
-    return <input placeholder= 'Lets add new task!'/>
-}
-const SearchItems = () => {
-    let itemsArray = ["Dreenk coffe", 'Create App']
-    return (
-        <ul>
-            <li>{itemsArray[0]}</li>
-            <li>{itemsArray[1]}</li>
-        </ul>
-    )
-}
+
 
 ReactDOM.render(<App />, document.getElementById('root'))
