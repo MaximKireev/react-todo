@@ -1,0 +1,23 @@
+.add-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.search:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.add-item {
+    position: relative;
+    width: 35px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 50%;
+    vertical-align: center;
+    align-items: center;
+    padding: 0;
+    background-color: white;
+    }

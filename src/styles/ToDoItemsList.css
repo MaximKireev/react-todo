@@ -1,0 +1,8 @@
+.list-group-item > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.buttons-wrapper > button {
+    margin: 3px;
+}
