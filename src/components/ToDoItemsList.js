@@ -7,7 +7,6 @@ export default class ToDoItemsList extends Component  {
 
     render(){
         let {value} = this.props;
-
     return (
                 <ul className='list-group w-100' >
             {value.map((item, key) =>

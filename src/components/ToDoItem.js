@@ -6,7 +6,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 export default class ToDoItem extends Component  {
 
 render(){
-    let {todo,done, important} = this.props;
+    let {todo, done, important} = this.props;
 
     let className = 'todo-item'
     if(done) {
